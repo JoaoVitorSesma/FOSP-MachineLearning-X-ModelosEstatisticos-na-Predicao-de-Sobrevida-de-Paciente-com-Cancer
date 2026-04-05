@@ -28,7 +28,6 @@
   "event_rate": 0.5553514572618173,
   "time_min_months": 1,
   "time_max_months": 61,
-  "time_median_months": 36.0,
   "train_event_rate": 0.5553557077800314,
   "test_event_rate": 0.5553344558395836
 }
