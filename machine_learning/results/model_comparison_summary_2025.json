@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-04-24T06:06:35.893806",
+  "principal_models": [
+    "Cox_PH",
+    "Random_Survival_Forest",
+    "Gradient_Boosting_Survival",
+    "FastSurvivalSVM",
+    "XGBoost_Cox",
+    "LightGBM_Cox",
+    "XGBoost_AFT"
+  ],
+  "composite_score_definition": "Average of C_Index, C_Index_IPCW and Mean_Time_AUC. IBS is reported separately because it is only available when the model exposes predict_survival_function.",
+  "ranking": [
+    {
+      "Model_Name": "LightGBM_Cox",
+      "Composite_Score": 0.7671
+    },
+    {
+      "Model_Name": "Random_Survival_Forest",
+      "Composite_Score": 0.7654
+    },
+    {
+      "Model_Name": "XGBoost_Cox",
+      "Composite_Score": 0.7634
+    },
+    {
+      "Model_Name": "Gradient_Boosting_Survival",
+      "Composite_Score": 0.7446
+    },
+    {
+      "Model_Name": "Cox_PH",
+      "Composite_Score": 0.7244
+    },
+    {
+      "Model_Name": "FastSurvivalSVM",
+      "Composite_Score": 0.7239
+    },
+    {
+      "Model_Name": "XGBoost_AFT",
+      "Composite_Score": 0.6845
+    }
+  ]
+}
