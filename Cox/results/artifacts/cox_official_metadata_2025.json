@@ -1,0 +1,18 @@
+{
+  "model_name": "Cox_PH",
+  "model_source": "Cox/Cox.ipynb",
+  "model_class": "lifelines.CoxPHFitter",
+  "is_official_cox_model": true,
+  "duration_col": "time",
+  "event_col": "event",
+  "strata_cols": [
+    "DIAGPREV",
+    "TRATCONS_CAT",
+    "CONSDIAG_CAT"
+  ],
+  "uses_stratification": true,
+  "penalizer": 0.1,
+  "train_n": 26131,
+  "test_n": 6533,
+  "generated_at": "2026-04-25T12:23:32.040345"
+}

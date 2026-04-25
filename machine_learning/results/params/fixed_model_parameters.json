@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:55:36.434081",
+  "generated_at": "2026-04-25T18:27:42.618494",
   "random_state": 19,
   "clinical_prediction_horizons_months": [
     12,
@@ -7,11 +7,6 @@
     60
   ],
   "fixed_model_parameters": {
-    "Cox_PH": {
-      "alpha": 0.01,
-      "ties": "breslow",
-      "role": "baseline interno; Cox completo em Cox.ipynb"
-    },
     "Weibull_AFT": {
       "fitter": "WeibullAFTFitter",
       "penalizer": 0.01,
@@ -90,11 +85,6 @@
     }
   },
   "fitted_model_parameters": {
-    "Cox_PH": {
-      "alpha": 0.01,
-      "ties": "breslow",
-      "role": "baseline interno; Cox completo em Cox.ipynb"
-    },
     "Weibull_AFT": {
       "fitter": "WeibullAFTFitter",
       "penalizer": 0.01,
@@ -198,6 +188,6 @@
     "parameter_selection": "Não realizado nesta versão.",
     "validation": "Treino para ajuste; teste somente para avaliação final.",
     "xgboost_aft_prediction_scale": "Predição mantida em meses; np.exp() não aplicado.",
-    "cox_final": "O Cox estatístico completo é tratado separadamente no notebook Cox.ipynb."
+    "cox_final": "O Cox estatístico oficial é carregado dos artefatos gerados pelo notebook Cox/Cox.ipynb."
   }
 }

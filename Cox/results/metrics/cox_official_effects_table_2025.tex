@@ -1,0 +1,75 @@
+\begin{table}
+\caption{Principais efeitos estimados pelo modelo oficial de Cox.}
+\label{tab:cox_official_effects}
+\begin{tabular}{lllrrrrrl}
+\toprule
+Variável & Grupo & Referência & Coeficiente & Hazard Ratio & Erro padrão & p-valor & Influência absoluta & Direção do efeito \\
+\midrule
+ECGRUP & IV & I & 1.1915 & 3.2919 & 0.0988 & 0.0000 & 1.1915 & Maior risco \\
+MORFO_CAT & Anel de sinete & Adenocarcinoma & 0.4979 & 1.6452 & 0.0650 & 0.0000 & 0.4979 & Maior risco \\
+TOPO & C181 & C180 & -0.4970 & 0.6084 & 0.0853 & 0.0000 & 0.4970 & Menor risco \\
+CATEATEND & 9 & 2 & 0.3005 & 1.3505 & 0.0657 & 0.0000 & 0.3005 & Maior risco \\
+ESCOLARI & 5 & 1 & -0.2681 & 0.7648 & 0.0539 & 0.0000 & 0.2681 & Menor risco \\
+nDRS & 12 & 1 & -0.2627 & 0.7690 & 0.1127 & 0.0198 & 0.2627 & Menor risco \\
+ECGRUP & II & I & -0.2368 & 0.7892 & 0.0383 & 0.0000 & 0.2368 & Menor risco \\
+TOPO & C188 & C180 & 0.2246 & 1.2519 & 0.0925 & 0.0152 & 0.2246 & Maior risco \\
+TOPO & C199 & C180 & -0.1923 & 0.8250 & 0.0356 & 0.0000 & 0.1923 & Menor risco \\
+nDRS & 7 & 1 & -0.1789 & 0.8362 & 0.0651 & 0.0060 & 0.1789 & Menor risco \\
+TOPO & C185 & C180 & 0.1664 & 1.1810 & 0.0954 & 0.0811 & 0.1664 & Maior risco \\
+TOPO & C183 & C180 & 0.1610 & 1.1747 & 0.0836 & 0.0541 & 0.1610 & Maior risco \\
+nDRS & 11 & 1 & 0.1584 & 1.1716 & 0.2335 & 0.4976 & 0.1584 & Maior risco \\
+nDRS & 2 & 1 & -0.1571 & 0.8546 & 0.0546 & 0.0040 & 0.1571 & Menor risco \\
+DIAGTRAT_CAT & 2 & 0 & -0.1565 & 0.8551 & 0.0319 & 0.0000 & 0.1565 & Menor risco \\
+nDRS & 5 & 1 & -0.1369 & 0.8721 & 0.0548 & 0.0124 & 0.1369 & Menor risco \\
+ANODIAG & 2015 & 2000 & 0.1318 & 1.1409 & 0.0297 & 0.0000 & 0.1318 & Maior risco \\
+ANODIAG & 2017 & 2000 & 0.1257 & 1.1339 & 0.0411 & 0.0023 & 0.1257 & Maior risco \\
+ANODIAG & 2016 & 2000 & 0.1194 & 1.1269 & 0.0276 & 0.0000 & 0.1194 & Maior risco \\
+MORFO_CAT & Indiferenciado & Adenocarcinoma & 0.1175 & 1.1246 & 0.1188 & 0.3227 & 0.1175 & Maior risco \\
+ANODIAG & 2014 & 2000 & 0.1169 & 1.1240 & 0.0405 & 0.0039 & 0.1169 & Maior risco \\
+TOPO & C186 & C180 & -0.1154 & 0.8910 & 0.0336 & 0.0006 & 0.1154 & Menor risco \\
+ESCOLARI & 4 & 1 & -0.1138 & 0.8924 & 0.0295 & 0.0001 & 0.1138 & Menor risco \\
+ANODIAG & 2011 & 2000 & -0.1128 & 0.8934 & 0.0416 & 0.0068 & 0.1128 & Menor risco \\
+ECGRUP & III & I & 0.1091 & 1.1153 & 0.0502 & 0.0296 & 0.1091 & Maior risco \\
+nDRS & 10 & 1 & -0.1089 & 0.8968 & 0.0727 & 0.1343 & 0.1089 & Menor risco \\
+SEXO & 2 & 1 & -0.1082 & 0.8974 & 0.0152 & 0.0000 & 0.1082 & Menor risco \\
+TOPO & C209 & C180 & 0.1040 & 1.1096 & 0.0193 & 0.0000 & 0.1040 & Maior risco \\
+ANODIAG & 2008 & 2000 & -0.0970 & 0.9076 & 0.0438 & 0.0269 & 0.0970 & Menor risco \\
+nDRS & 16 & 1 & -0.0850 & 0.9185 & 0.0700 & 0.2243 & 0.0850 & Menor risco \\
+ANODIAG & 2007 & 2000 & -0.0845 & 0.9189 & 0.0364 & 0.0202 & 0.0845 & Menor risco \\
+ANODIAG & 2018 & 2000 & 0.0763 & 1.0793 & 0.0473 & 0.1068 & 0.0763 & Maior risco \\
+ANODIAG & 2010 & 2000 & -0.0750 & 0.9277 & 0.0383 & 0.0498 & 0.0750 & Menor risco \\
+ANODIAG & 2013 & 2000 & 0.0725 & 1.0752 & 0.0424 & 0.0873 & 0.0725 & Maior risco \\
+DIAGTRAT_CAT & 1 & 0 & -0.0723 & 0.9303 & 0.0324 & 0.0256 & 0.0723 & Menor risco \\
+ANODIAG & 2001 & 2000 & -0.0715 & 0.9310 & 0.0541 & 0.1863 & 0.0715 & Menor risco \\
+nDRS & 13 & 1 & -0.0689 & 0.9334 & 0.0691 & 0.3186 & 0.0689 & Menor risco \\
+TOPO & C187 & C180 & -0.0649 & 0.9372 & 0.0190 & 0.0006 & 0.0649 & Menor risco \\
+ESCOLARI & 9 & 1 & 0.0637 & 1.0658 & 0.0475 & 0.1795 & 0.0637 & Maior risco \\
+MORFO_CAT & Mucinoso & Adenocarcinoma & -0.0635 & 0.9385 & 0.0420 & 0.1305 & 0.0635 & Menor risco \\
+TOPO & C184 & C180 & 0.0624 & 1.0644 & 0.0398 & 0.1165 & 0.0624 & Maior risco \\
+ANODIAG & 2006 & 2000 & -0.0573 & 0.9443 & 0.0321 & 0.0746 & 0.0573 & Menor risco \\
+ESCOLARI & 3 & 1 & -0.0490 & 0.9522 & 0.0219 & 0.0256 & 0.0490 & Menor risco \\
+nDRS & 6 & 1 & 0.0486 & 1.0498 & 0.0539 & 0.3677 & 0.0486 & Maior risco \\
+ANODIAG & 2004 & 2000 & -0.0484 & 0.9527 & 0.0419 & 0.2480 & 0.0484 & Menor risco \\
+nDRS & 4 & 1 & -0.0420 & 0.9589 & 0.0870 & 0.6293 & 0.0420 & Menor risco \\
+nDRS & 14 & 1 & 0.0346 & 1.0352 & 0.0746 & 0.6424 & 0.0346 & Maior risco \\
+nDRS & 3 & 1 & -0.0329 & 0.9677 & 0.0532 & 0.5368 & 0.0329 & Menor risco \\
+ESCOLARI & 2 & 1 & -0.0329 & 0.9677 & 0.0248 & 0.1847 & 0.0329 & Menor risco \\
+HABILIT & 2 & 0 & 0.0323 & 1.0328 & 0.0431 & 0.4540 & 0.0323 & Maior risco \\
+HABILIT & 1 & 0 & 0.0279 & 1.0283 & 0.0548 & 0.6104 & 0.0279 & Maior risco \\
+ANODIAG & 2005 & 2000 & 0.0260 & 1.0264 & 0.0468 & 0.5785 & 0.0260 & Maior risco \\
+ANODIAG & 2012 & 2000 & 0.0241 & 1.0244 & 0.0353 & 0.4943 & 0.0241 & Maior risco \\
+TOPO & C189 & C180 & 0.0234 & 1.0237 & 0.0322 & 0.4671 & 0.0234 & Maior risco \\
+TOPO & C182 & C180 & -0.0209 & 0.9794 & 0.0241 & 0.3859 & 0.0209 & Menor risco \\
+ANODIAG & 2002 & 2000 & 0.0190 & 1.0192 & 0.0381 & 0.6177 & 0.0190 & Maior risco \\
+ANODIAG & 2009 & 2000 & -0.0185 & 0.9816 & 0.0405 & 0.6471 & 0.0185 & Menor risco \\
+IDADE & — & — & 0.0114 & 1.0115 & 0.0007 & 0.0000 & 0.0114 & Maior risco \\
+nDRS & 8 & 1 & 0.0096 & 1.0097 & 0.0820 & 0.9066 & 0.0096 & Maior risco \\
+ANODIAG & 2003 & 2000 & -0.0088 & 0.9913 & 0.0452 & 0.8463 & 0.0088 & Menor risco \\
+nDRS & 17 & 1 & -0.0081 & 0.9919 & 0.0654 & 0.9013 & 0.0081 & Menor risco \\
+ANODIAG & 2019 & 2000 & 0.0078 & 1.0078 & 0.0448 & 0.8627 & 0.0078 & Maior risco \\
+nDRS & 9 & 1 & -0.0014 & 0.9986 & 0.0835 & 0.9865 & 0.0014 & Menor risco \\
+nDRS & 15 & 1 & 0.0006 & 1.0006 & 0.0805 & 0.9941 & 0.0006 & Maior risco \\
+DIAGTRAT_CAT & 3 & 0 & 0.0000 & 1.0000 & 0.0000 & 0.0000 & 0.0000 & Maior risco \\
+\bottomrule
+\end{tabular}
+\end{table}

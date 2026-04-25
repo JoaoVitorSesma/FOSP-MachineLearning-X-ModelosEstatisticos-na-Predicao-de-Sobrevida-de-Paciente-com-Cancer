@@ -1,0 +1,16 @@
+{
+  "model_source": "Cox/Cox.ipynb",
+  "is_official_cox_model": true,
+  "schoenfeld_test_performed": true,
+  "calibration_performed": true,
+  "km_analysis_performed": true,
+  "log_minus_log_analysis_performed": true,
+  "martingale_residuals_performed": true,
+  "uses_stratification": true,
+  "strata_cols": [
+    "DIAGPREV",
+    "TRATCONS_CAT",
+    "CONSDIAG_CAT"
+  ],
+  "generated_at": "2026-04-25T12:23:33.402831"
+}
