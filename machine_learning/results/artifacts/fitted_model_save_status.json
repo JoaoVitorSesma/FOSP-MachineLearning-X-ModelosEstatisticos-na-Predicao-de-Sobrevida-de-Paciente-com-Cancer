@@ -1,0 +1,12 @@
+{
+  "Cox_PH": "saved",
+  "Weibull_AFT": "saved",
+  "LogNormal_AFT": "saved",
+  "LogLogistic_AFT": "saved",
+  "Random_Survival_Forest": "saved",
+  "Gradient_Boosting_Survival": "saved",
+  "XGBoost_Cox": "saved",
+  "XGBoost_AFT": "saved",
+  "LightGBM": "saved",
+  "LightGBM_Cox": "saved"
+}

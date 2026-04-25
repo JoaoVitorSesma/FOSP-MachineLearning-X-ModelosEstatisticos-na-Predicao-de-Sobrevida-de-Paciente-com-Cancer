@@ -1,43 +1,233 @@
 {
-  "generated_at": "2026-04-24T06:06:35.893806",
-  "principal_models": [
-    "Cox_PH",
-    "Random_Survival_Forest",
-    "Gradient_Boosting_Survival",
-    "FastSurvivalSVM",
-    "XGBoost_Cox",
-    "LightGBM_Cox",
-    "XGBoost_AFT"
-  ],
-  "composite_score_definition": "Average of C_Index, C_Index_IPCW and Mean_Time_AUC. IBS is reported separately because it is only available when the model exposes predict_survival_function.",
-  "ranking": [
+  "generated_at": "2026-04-24T21:55:36.430721",
+  "discrimination_ranking": [
     {
-      "Model_Name": "LightGBM_Cox",
-      "Composite_Score": 0.7671
+      "rank_discrimination": 1,
+      "model_name": "LightGBM_Cox",
+      "model_group": "machine learning",
+      "model_family": "risk_score",
+      "C_Index": 0.7484276060912756,
+      "C_Index_IPCW": 0.7470376519844965,
+      "AUC_12m": 0.7980338646940252,
+      "AUC_36m": 0.8145920312834771,
+      "AUC_60m": 0.8142132761234275,
+      "Mean_Time_AUC": 0.8075014559578538,
+      "rank_score": 0.7470376519844965
     },
     {
-      "Model_Name": "Random_Survival_Forest",
-      "Composite_Score": 0.7654
+      "rank_discrimination": 2,
+      "model_name": "Random_Survival_Forest",
+      "model_group": "machine learning",
+      "model_family": "survival_function",
+      "C_Index": 0.7470993708352901,
+      "C_Index_IPCW": 0.7457459336739538,
+      "AUC_12m": 0.7998166415803003,
+      "AUC_36m": 0.811688198983288,
+      "AUC_60m": 0.8115087124105405,
+      "Mean_Time_AUC": 0.8066208994756623,
+      "rank_score": 0.7457459336739538
     },
     {
-      "Model_Name": "XGBoost_Cox",
-      "Composite_Score": 0.7634
+      "rank_discrimination": 3,
+      "model_name": "XGBoost_Cox",
+      "model_group": "machine learning",
+      "model_family": "risk_score",
+      "C_Index": 0.7461861595948898,
+      "C_Index_IPCW": 0.7447869903111471,
+      "AUC_12m": 0.7952841605632787,
+      "AUC_36m": 0.8121663621697719,
+      "AUC_60m": 0.8112675539515617,
+      "Mean_Time_AUC": 0.8048459017028795,
+      "rank_score": 0.7447869903111471
     },
     {
-      "Model_Name": "Gradient_Boosting_Survival",
-      "Composite_Score": 0.7446
+      "rank_discrimination": 4,
+      "model_name": "XGBoost_AFT",
+      "model_group": "machine learning",
+      "model_family": "predicted_time",
+      "C_Index": 0.7457303764679677,
+      "C_Index_IPCW": 0.744036455387961,
+      "AUC_12m": 0.7998435411485797,
+      "AUC_36m": 0.8081745405523716,
+      "AUC_60m": 0.8050448652202363,
+      "Mean_Time_AUC": 0.8040845703466957,
+      "rank_score": 0.744036455387961
     },
     {
-      "Model_Name": "Cox_PH",
-      "Composite_Score": 0.7244
+      "rank_discrimination": 5,
+      "model_name": "LightGBM",
+      "model_group": "machine learning",
+      "model_family": "predicted_time",
+      "C_Index": 0.7443932765622072,
+      "C_Index_IPCW": 0.7430966173559758,
+      "AUC_12m": 0.7930985165348095,
+      "AUC_36m": 0.8143397911605632,
+      "AUC_60m": 0.8169749043489398,
+      "Mean_Time_AUC": 0.8057985864556524,
+      "rank_score": 0.7430966173559758
     },
     {
-      "Model_Name": "FastSurvivalSVM",
-      "Composite_Score": 0.7239
+      "rank_discrimination": 6,
+      "model_name": "Gradient_Boosting_Survival",
+      "model_group": "machine learning",
+      "model_family": "survival_function",
+      "C_Index": 0.734457405449219,
+      "C_Index_IPCW": 0.7331292691080121,
+      "AUC_12m": 0.7819368594875171,
+      "AUC_36m": 0.7994381575897944,
+      "AUC_60m": 0.7979462009502037,
+      "Mean_Time_AUC": 0.7917496665359801,
+      "rank_score": 0.7331292691080121
     },
     {
-      "Model_Name": "XGBoost_AFT",
-      "Composite_Score": 0.6845
+      "rank_discrimination": 7,
+      "model_name": "LogLogistic_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "C_Index": 0.7285360631011969,
+      "C_Index_IPCW": 0.7268779598480096,
+      "AUC_12m": 0.7798781601781462,
+      "AUC_36m": 0.7885714058990334,
+      "AUC_60m": 0.7827686135357824,
+      "Mean_Time_AUC": 0.7838526182397881,
+      "rank_score": 0.7268779598480096
+    },
+    {
+      "rank_discrimination": 8,
+      "model_name": "Cox_PH",
+      "model_group": "estatístico semiparamétrico",
+      "model_family": "survival_function",
+      "C_Index": 0.7278250633563526,
+      "C_Index_IPCW": 0.7263370132831714,
+      "AUC_12m": 0.7758854662968631,
+      "AUC_36m": 0.7896858054243819,
+      "AUC_60m": 0.785263871095093,
+      "Mean_Time_AUC": 0.7830462714188541,
+      "rank_score": 0.7263370132831714
+    },
+    {
+      "rank_discrimination": 9,
+      "model_name": "Weibull_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "C_Index": 0.7276627580161413,
+      "C_Index_IPCW": 0.7261914572897762,
+      "AUC_12m": 0.7754099846479192,
+      "AUC_36m": 0.7896833596182825,
+      "AUC_60m": 0.7855511793569684,
+      "Mean_Time_AUC": 0.7828946907007207,
+      "rank_score": 0.7261914572897762
+    },
+    {
+      "rank_discrimination": 10,
+      "model_name": "LogNormal_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "C_Index": 0.7269365269142952,
+      "C_Index_IPCW": 0.7251531165785597,
+      "AUC_12m": 0.7807378271278855,
+      "AUC_36m": 0.7850026117945275,
+      "AUC_60m": 0.7781861378784953,
+      "Mean_Time_AUC": 0.7819819930098318,
+      "rank_score": 0.7251531165785597
     }
-  ]
+  ],
+  "probability_ranking": [
+    {
+      "rank_probability": 1,
+      "model_name": "Random_Survival_Forest",
+      "model_group": "machine learning",
+      "model_family": "survival_function",
+      "Brier_12m": 0.1394029682938833,
+      "Brier_36m": 0.1761742425170938,
+      "Brier_60m": 0.17462032302664013,
+      "IBS": 0.1646455003201716
+    },
+    {
+      "rank_probability": 2,
+      "model_name": "Gradient_Boosting_Survival",
+      "model_group": "machine learning",
+      "model_family": "survival_function",
+      "Brier_12m": 0.14373671065997148,
+      "Brier_36m": 0.18094026344782424,
+      "Brier_60m": 0.18093166618099363,
+      "IBS": 0.16969695667333942
+    },
+    {
+      "rank_probability": 3,
+      "model_name": "Cox_PH",
+      "model_group": "estatístico semiparamétrico",
+      "model_family": "survival_function",
+      "Brier_12m": 0.14405376112087312,
+      "Brier_36m": 0.1849298450623363,
+      "Brier_60m": 0.18602968807012002,
+      "IBS": 0.1726743834204709
+    },
+    {
+      "rank_probability": 4,
+      "model_name": "Weibull_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "Brier_12m": 0.14462124281820726,
+      "Brier_36m": 0.1850718710362207,
+      "Brier_60m": 0.18628606339389456,
+      "IBS": 0.17282997546477874
+    },
+    {
+      "rank_probability": 5,
+      "model_name": "LogLogistic_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "Brier_12m": 0.14354680180655618,
+      "Brier_36m": 0.18671377983199594,
+      "Brier_60m": 0.1883980527359889,
+      "IBS": 0.17371541856610936
+    },
+    {
+      "rank_probability": 6,
+      "model_name": "LogNormal_AFT",
+      "model_group": "estatístico paramétrico",
+      "model_family": "parametric_aft",
+      "Brier_12m": 0.14371898687092652,
+      "Brier_36m": 0.1887520265949517,
+      "Brier_60m": 0.19011903364179247,
+      "IBS": 0.1751377808895621
+    }
+  ],
+  "training_failures": {},
+  "lightgbm_cox_sanity_checks": {
+    "gradient_validation_passed": true,
+    "direction_check_passed": true,
+    "generalization_gap": 0.014128274852490574,
+    "overfitting_warning": false,
+    "risk_group_monotonicity_passed": true,
+    "spearman_with_xgboost_cox": 0.9938262405592747
+  },
+  "article_outputs": {
+    "Tabela 3": [
+      "results\\metrics\\article_table_3_model_metrics_2025.csv",
+      "results\\metrics\\article_table_3_model_metrics_2025.tex"
+    ],
+    "Figura 2": [
+      "results\\figures\\article_fig2_top5_feature_importance_by_model_2025.png",
+      "results\\metrics\\article_top5_feature_importance_by_model_2025.csv"
+    ],
+    "Figura 3": [
+      "results\\figures\\article_fig3_cox_vs_best_ml_survival_curve_2025.png",
+      "results\\metrics\\article_fig3_survival_curves_2025.csv"
+    ],
+    "KM por grupos de risco": [
+      "results\\figures\\article_km_by_risk_group_best_model_2025.png",
+      "results\\metrics\\article_risk_group_summary_best_model_2025.csv"
+    ],
+    "Calibração 12/36/60 meses": [
+      "results\\figures\\article_calibration_12m_2025.png",
+      "results\\figures\\article_calibration_36m_2025.png",
+      "results\\figures\\article_calibration_60m_2025.png",
+      "results\\metrics\\article_calibration_by_horizon_2025.csv"
+    ],
+    "Tabela de sanidade LightGBM_Cox": [
+      "results\\metrics\\article_lightgbm_cox_sanity_checks_2025.csv"
+    ]
+  }
 }

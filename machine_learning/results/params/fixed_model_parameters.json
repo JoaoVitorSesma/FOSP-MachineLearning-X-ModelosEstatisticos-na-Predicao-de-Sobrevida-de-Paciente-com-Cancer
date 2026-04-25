@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-04-24T21:55:36.434081",
+  "random_state": 19,
+  "clinical_prediction_horizons_months": [
+    12,
+    36,
+    60
+  ],
+  "fixed_model_parameters": {
+    "Cox_PH": {
+      "alpha": 0.01,
+      "ties": "breslow",
+      "role": "baseline interno; Cox completo em Cox.ipynb"
+    },
+    "Weibull_AFT": {
+      "fitter": "WeibullAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "LogNormal_AFT": {
+      "fitter": "LogNormalAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "LogLogistic_AFT": {
+      "fitter": "LogLogisticAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "Random_Survival_Forest": {
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "random_state": 19,
+      "n_jobs": 1
+    },
+    "Gradient_Boosting_Survival": {
+      "learning_rate": 0.05,
+      "n_estimators": 150,
+      "max_depth": 3,
+      "random_state": 19
+    },
+    "XGBoost_Cox": {
+      "objective": "survival:cox",
+      "label_encoding": "tempo positivo para evento e tempo negativo para censura à direita",
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "num_boost_round": 150
+    },
+    "XGBoost_AFT": {
+      "objective": "survival:aft",
+      "label_encoding": "lower/upper bounds; censura à direita com upper_bound=+inf",
+      "aft_loss_distribution": "normal",
+      "aft_loss_distribution_scale": 1.0,
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "num_boost_round": 150,
+      "prediction_scale_decision": "Booster.predict() tratado como tempo em meses; np.exp() não é aplicado."
+    },
+    "LightGBM": {
+      "objective": "regression",
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 5,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "observacao": "baseline de tempo observado; não modela censura diretamente"
+    },
+    "LightGBM_Cox": {
+      "objective": "custom_cox_partial_loglik",
+      "tie_handling": "breslow",
+      "label_encoding": "tempo positivo para evento e tempo negativo para censura à direita",
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 5,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "lambda_l2": 1.0,
+      "num_boost_round": 150
+    }
+  },
+  "fitted_model_parameters": {
+    "Cox_PH": {
+      "alpha": 0.01,
+      "ties": "breslow",
+      "role": "baseline interno; Cox completo em Cox.ipynb"
+    },
+    "Weibull_AFT": {
+      "fitter": "WeibullAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "LogNormal_AFT": {
+      "fitter": "LogNormalAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "LogLogistic_AFT": {
+      "fitter": "LogLogisticAFTFitter",
+      "penalizer": 0.01,
+      "l1_ratio": 0.0
+    },
+    "Random_Survival_Forest": {
+      "n_estimators": 200,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "random_state": 19,
+      "n_jobs": 1
+    },
+    "Gradient_Boosting_Survival": {
+      "learning_rate": 0.05,
+      "n_estimators": 150,
+      "max_depth": 3,
+      "random_state": 19
+    },
+    "XGBoost_Cox": {
+      "objective": "survival:cox",
+      "eval_metric": "cox-nloglik",
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "min_child_weight": 1.0,
+      "tree_method": "hist",
+      "verbosity": 0,
+      "seed": 19,
+      "num_boost_round": 150
+    },
+    "XGBoost_AFT": {
+      "objective": "survival:aft",
+      "eval_metric": "aft-nloglik",
+      "aft_loss_distribution": "normal",
+      "aft_loss_distribution_scale": 1.0,
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "tree_method": "hist",
+      "verbosity": 0,
+      "seed": 19,
+      "num_boost_round": 150,
+      "prediction_scale": "time"
+    },
+    "LightGBM": {
+      "objective": "regression",
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 5,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "random_state": 19,
+      "n_jobs": 1,
+      "verbosity": -1
+    },
+    "LightGBM_Cox": {
+      "metric": "None",
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 5,
+      "min_data_in_leaf": 20,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "lambda_l2": 1.0,
+      "verbosity": -1,
+      "seed": 19,
+      "num_threads": 1,
+      "objective": "custom_cox_partial_loglik",
+      "tie_handling": "breslow",
+      "num_boost_round": 150
+    }
+  },
+  "training_failures": {},
+  "lightgbm_cox_sanity_checks": {
+    "gradient_validation_passed": true,
+    "direction_check_passed": true,
+    "generalization_gap": 0.014128274852490574,
+    "overfitting_warning": false,
+    "risk_group_monotonicity_passed": true,
+    "spearman_with_xgboost_cox": 0.9938262405592747
+  },
+  "methodological_notes": {
+    "parameter_selection": "Não realizado nesta versão.",
+    "validation": "Treino para ajuste; teste somente para avaliação final.",
+    "xgboost_aft_prediction_scale": "Predição mantida em meses; np.exp() não aplicado.",
+    "cox_final": "O Cox estatístico completo é tratado separadamente no notebook Cox.ipynb."
+  }
+}
