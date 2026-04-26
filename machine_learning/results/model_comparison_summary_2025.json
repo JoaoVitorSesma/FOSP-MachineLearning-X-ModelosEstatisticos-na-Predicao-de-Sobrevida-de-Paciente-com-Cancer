@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T18:27:42.615028",
+  "generated_at": "2026-04-26T09:49:05.067932",
   "discrimination_ranking": [
     {
       "rank_discrimination": 1,
@@ -207,7 +207,7 @@
       "Brier_12m": 0.2142642557968108,
       "Brier_36m": 0.2910156086031269,
       "Brier_60m": 0.2877067611854222,
-      "IBS": 0.266884962266575
+      "IBS": 0.2539082423087921
     }
   ],
   "training_failures": {},

@@ -6,11 +6,25 @@
   "km_analysis_performed": true,
   "log_minus_log_analysis_performed": true,
   "martingale_residuals_performed": true,
+  "ibs_audit_performed": true,
+  "ibs_audit_passed": true,
+  "ibs_recalculated_using_survival_S_t": 0.2539082423087921,
+  "ibs_wrong_if_using_risk_1_minus_S_t": 0.39384476730344725,
+  "brier_audit_performed": true,
+  "ibs_time_grid": "np.arange(1.0, 61.0, dtype=float)",
+  "ibs_time_min": 1.0,
+  "ibs_time_max": 60.0,
+  "ibs_time_n": 60,
+  "clinical_times": [
+    12.0,
+    36.0,
+    60.0
+  ],
   "uses_stratification": true,
   "strata_cols": [
     "DIAGPREV",
     "TRATCONS_CAT",
     "CONSDIAG_CAT"
   ],
-  "generated_at": "2026-04-25T12:23:33.402831"
+  "generated_at": "2026-04-25T21:52:01.784610"
 }

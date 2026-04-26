@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-04-25T21:52:00.227384",
+  "n_checks": 23,
+  "n_failed_error_checks": 0,
+  "n_failed_warning_checks": 0,
+  "ibs_recalculated_using_survival_S_t": 0.2539082423087921,
+  "ibs_wrong_if_using_risk_1_minus_S_t": 0.39384476730344725,
+  "brier_recalculated_using_survival_S_t": {
+    "12m": 0.21426425579681088,
+    "36m": 0.2910156086031269,
+    "60m": 0.2877067611854222
+  },
+  "brier_wrong_if_using_risk_1_minus_S_t": {
+    "12m": 0.4874568695910611,
+    "36m": 0.30568503949211895,
+    "60m": 0.3153621005461758
+  },
+  "mean_abs_gap_cox_mean_survival_vs_km": 0.0038176133414091827,
+  "max_abs_gap_cox_mean_survival_vs_km": 0.008526938837285059,
+  "audit_files": {
+    "checks": "results\\metrics\\cox_official_ibs_audit_checks_2025.csv",
+    "values": "results\\metrics\\cox_official_ibs_audit_values_2025.csv",
+    "curve_audit": "results\\metrics\\cox_official_curve_audit_2025.csv"
+  }
+}
