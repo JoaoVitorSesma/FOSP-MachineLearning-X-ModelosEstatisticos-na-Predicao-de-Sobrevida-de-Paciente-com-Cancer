@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T11:37:22.067982",
+  "generated_at": "2026-04-26T20:17:08.488952",
   "discrimination_ranking": [
     {
       "rank_discrimination": 1,
@@ -145,6 +145,17 @@
   "probability_ranking": [
     {
       "rank_probability": 1,
+      "model_name": "LightGBM_Cox",
+      "model_group": "machine learning",
+      "model_family": "risk_score",
+      "model_source": "machine_learning/MachineLearning.ipynb",
+      "Brier_12m": 0.1391045172202508,
+      "Brier_36m": 0.17309784157586974,
+      "Brier_60m": 0.17260739201637135,
+      "IBS": 0.15525885123977118
+    },
+    {
+      "rank_probability": 2,
       "model_name": "Random_Survival_Forest",
       "model_group": "machine learning",
       "model_family": "survival_function",
@@ -155,7 +166,7 @@
       "IBS": 0.1646455003201716
     },
     {
-      "rank_probability": 2,
+      "rank_probability": 3,
       "model_name": "Gradient_Boosting_Survival",
       "model_group": "machine learning",
       "model_family": "survival_function",
@@ -166,7 +177,7 @@
       "IBS": 0.16969695667333942
     },
     {
-      "rank_probability": 3,
+      "rank_probability": 4,
       "model_name": "Weibull_AFT",
       "model_group": "estatístico paramétrico",
       "model_family": "parametric_aft",
@@ -177,7 +188,7 @@
       "IBS": 0.17282997546477874
     },
     {
-      "rank_probability": 4,
+      "rank_probability": 5,
       "model_name": "LogLogistic_AFT",
       "model_group": "estatístico paramétrico",
       "model_family": "parametric_aft",
@@ -188,7 +199,7 @@
       "IBS": 0.17371541856610936
     },
     {
-      "rank_probability": 5,
+      "rank_probability": 6,
       "model_name": "LogNormal_AFT",
       "model_group": "estatístico paramétrico",
       "model_family": "parametric_aft",
@@ -199,7 +210,7 @@
       "IBS": 0.1751377808895621
     },
     {
-      "rank_probability": 6,
+      "rank_probability": 7,
       "model_name": "Cox_PH",
       "model_group": "estatístico semiparamétrico",
       "model_family": "official_cox",
@@ -208,6 +219,17 @@
       "Brier_36m": 0.2910156086031269,
       "Brier_60m": 0.2877067611854222,
       "IBS": 0.2539082423087921
+    },
+    {
+      "rank_probability": 8,
+      "model_name": "XGBoost_Cox",
+      "model_group": "machine learning",
+      "model_family": "risk_score",
+      "model_source": "machine_learning/MachineLearning.ipynb",
+      "Brier_12m": 0.22889962827427113,
+      "Brier_36m": 0.4439410044164728,
+      "Brier_60m": 0.5444322745222838,
+      "IBS": 0.37236407058604104
     }
   ],
   "training_failures": {},
@@ -222,7 +244,9 @@
   "article_outputs": {
     "Tabela 3": [
       "results\\metrics\\article_table_3_model_metrics_2025.csv",
-      "results\\metrics\\article_table_3_model_metrics_2025.tex"
+      "results\\metrics\\article_table_3_model_metrics_2025.tex",
+      "results\\metrics\\article_risk_score_models_brier_ibs_2025.csv",
+      "results\\metrics\\article_risk_score_models_survival_matrix_audit_2025.csv"
     ],
     "Figura 2": [
       "results\\figures\\article_fig2_top5_feature_importance_by_model_2025.png",
@@ -232,11 +256,15 @@
     "Figura 3": [
       "results\\figures\\article_fig3_cox_official_vs_best_ml_survival_curve_2025.png",
       "results\\figures\\article_fig3_cox_vs_best_ml_survival_curve_2025.png",
-      "results\\metrics\\article_fig3_survival_curves_2025.csv"
+      "results\\metrics\\article_fig3_survival_curves_2025.csv",
+      "results\\figures\\article_fig3_survival_curves_km_cox_rsf_gbs_2025.png",
+      "results\\metrics\\article_fig3_survival_curves_km_cox_rsf_gbs_2025.csv"
     ],
     "KM por grupos de risco": [
       "results\\figures\\article_km_by_risk_group_best_model_2025.png",
-      "results\\metrics\\article_risk_group_summary_best_model_2025.csv"
+      "results\\metrics\\article_risk_group_summary_best_model_2025.csv",
+      "results\\figures\\article_km_risk_groups_cox_vs_rsf_2025.png",
+      "results\\metrics\\article_km_risk_groups_cox_vs_rsf_2025.csv"
     ],
     "Calibração 12/36/60 meses": [
       "results\\figures\\article_calibration_12m_2025.png",
