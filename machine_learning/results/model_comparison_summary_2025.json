@@ -254,11 +254,10 @@
       "results\\metrics\\article_top5_feature_importance_by_model_2025.csv"
     ],
     "Figura 3": [
-      "results\\figures\\article_fig3_cox_official_vs_best_ml_survival_curve_2025.png",
-      "results\\figures\\article_fig3_cox_vs_best_ml_survival_curve_2025.png",
-      "results\\metrics\\article_fig3_survival_curves_2025.csv",
+      "results\\figures\\article_fig3_survival_curves_km_cox_lgbm_rsf_gbs_2025.png",
       "results\\figures\\article_fig3_survival_curves_km_cox_rsf_gbs_2025.png",
-      "results\\metrics\\article_fig3_survival_curves_km_cox_rsf_gbs_2025.csv"
+      "results\\metrics\\article_fig3_survival_curves_km_cox_lgbm_rsf_gbs_2025.csv",
+      "results\\metrics\\lightgbm_cox_calibrated_survival_matrix_2025.npy"
     ],
     "KM por grupos de risco": [
       "results\\figures\\article_km_by_risk_group_best_model_2025.png",
